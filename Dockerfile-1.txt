@@ -1,0 +1,9 @@
+FROM pierrezemb/gostatic
+COPY . /srv/http/
+CMD ["-port","8080","-https-promote", "-enable-logging"]
+
+# Use an official Nginx image as the base image
+FROM nginx:alpine
+
+# Copy the static website files to the Nginx web directory
+COPY . /usr/share/nginx/html
