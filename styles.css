@@ -71,6 +71,7 @@ main {
 
 .overlay-text h2 {
     margin: 0 0 20px;
+    font-size: 1.5em; /* 폰트 크기 줄이기 */
 }
 
 .buttons {
@@ -119,6 +120,7 @@ main {
     width: 100%;
     max-width: 300px;
     margin: 10px; /* 모바일에서 간격 유지 */
+    position: relative; /* 타이머 위치 조정 */
 }
 
 #timer {
